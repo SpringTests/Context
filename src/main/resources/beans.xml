@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+    <bean id="jora" class="com.ethickeep.Beans.xml.TestXMLBean">
+<!--        <constructor-arg -->
+        <property name="name" value="Jora"/>
+    </bean>
+    <bean id="joras_friens" class="com.ethickeep.Beans.xml.AnotherTestXMLBean">
+        <property name="name" value="Jora's friend"/>
+        <property name="testBean" ref="jora"/>
+    </bean>
+</beans>
